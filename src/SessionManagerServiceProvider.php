@@ -1,9 +1,9 @@
 <?php
 
-namespace Itpathsolution\Sessionmanager;
+namespace Itpathsolutions\Sessionmanager;
 
 use Illuminate\Support\ServiceProvider;
-use Itpathsolution\Sessionmanager\Http\Middleware\RoleBasedSessionMiddleware;
+use Itpathsolutions\Sessionmanager\Http\Middleware\RoleBasedSessionMiddleware;
 use Illuminate\Routing\Router;
 
 class SessionManagerServiceProvider extends ServiceProvider

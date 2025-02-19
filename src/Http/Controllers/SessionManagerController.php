@@ -1,6 +1,6 @@
 <?php
 
-namespace Itpathsolution\Sessionmanager\Http\Controllers;
+namespace Itpathsolutions\Sessionmanager\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Spatie\Permission\Models\Role;

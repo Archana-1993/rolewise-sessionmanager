@@ -1,6 +1,6 @@
 <?php
 
-namespace Itpathsolution\Sessionmanager\Http\Controllers;
+namespace Itpathsolutions\Sessionmanager\Http\Controllers;
 
 abstract class Controller
 {

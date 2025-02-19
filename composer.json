@@ -1,11 +1,11 @@
 {
-    "name": "itpathsolution/sessionmanager",
-    "description": "Session manager information",
+    "name": "itpathsolutions/role-wise-session-manager",
+    "description": "Role wise Managed session lifetime",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Itpathsolution\\Sessionmanager\\": "src/"
+            "Itpathsolutions\\Sessionmanager\\": "src/"
         }
     },
     "authors": [
@@ -14,21 +14,21 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "illuminate/support": "^10.0|^11.0",
-        "spatie/laravel-permission": "^5.0|^6.0"
+        "php": ">=7.0",
+        "illuminate/support": ">=5.0 <12.0",
+        "spatie/laravel-permission": ">=3.0 <7.0"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Itpathsolution\\Sessionmanager\\SessionManagerServiceProvider"
+                "Itpathsolutions\\Sessionmanager\\SessionManagerServiceProvider"
             ]
         }
     },
     "scripts": {
         "post-install-cmd": [
             "@php -r \"if (class_exists('Spatie\\\\Permission\\\\PermissionServiceProvider')) { echo 'Spatie already installed. Skipping vendor publish.'; } else { system('php artisan vendor:publish --provider=\\\"Spatie\\\\Permission\\\\PermissionServiceProvider\\\" --tag=config'); system('php artisan vendor:publish --provider=\\\"Spatie\\\\LaravelPermission\\\\PermissionServiceProvider\\\" --tag=migrations'); }\"",
-            "@php artisan vendor:publish --provider=\"Itpathsolution\\Sessionmanager\\SessionManagerServiceProvider\" --tag=config"
+            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Sessionmanager\\SessionManagerServiceProvider\" --tag=config"
         ]
     },
     "version": "1.0.1"

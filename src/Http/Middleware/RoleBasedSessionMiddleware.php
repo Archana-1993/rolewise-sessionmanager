@@ -1,6 +1,6 @@
 <?php
 
-namespace Itpathsolution\Sessionmanager\Http\Middleware;
+namespace Itpathsolutions\Sessionmanager\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

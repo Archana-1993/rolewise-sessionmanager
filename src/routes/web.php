@@ -1,6 +1,6 @@
 <?php
 
-use Itpathsolution\Sessionmanager\Http\Controllers\SessionManagerController;
+use Itpathsolutions\Sessionmanager\Http\Controllers\SessionManagerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/session-manager-info', [SessionManagerController::class, 'index']);
